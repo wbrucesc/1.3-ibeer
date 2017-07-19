@@ -33,6 +33,7 @@ img{
     /*overflow: hidden;*/
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
     /*
         TODO:
@@ -123,9 +124,11 @@ main{
     padding: 20px;
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    width: 640px;
-    margin-left: 60px;
-
+    flex: 0 0 48%;
+    bottom: 50px;
+    position: relative;
+    /*width: 530px;*/
+    /*margin-left: 60px;*/
     /*background-position: 60px;*/
     /*
         TODO:
@@ -137,11 +140,15 @@ aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    width: 240px;
-    /*float: right;*/
     position: relative;
-    top: 30px;
-    /*right: auto;*/
+    flex: 0 0 18%;
+
+    /*width: 240px;*/
+    /*float: right;*/
+
+    bottom: 50px;
+    /*bottom: 1910px;*/
+    /*left: 750px;*/
     /*flex-wrap: wrap; /* having issues here */*/
 
     /*
@@ -170,7 +177,9 @@ article{
     /*justify-content: space-between;*/
 }
 
-
+article p{
+  font-size: 14px;
+}
 
 article h2{
     line-height: 1em;
@@ -190,8 +199,9 @@ article time{
 }
 article img{
     float: right;
-    max width: 280px;
-    max-height: 210px;
+    width: 230px;
+    height: 170px;
+    margin-left: 12px;
     /*
         TODO:
         - Float article images to the right
@@ -216,8 +226,11 @@ article footer p{
     */
 }
 #site-footer{
-
+    color: #fff;
+    text-align: center;
     background: #333;
+    padding-top: 20px;
+    padding-bottom: 20px;
     /*
         TODO:
         - Style the site footer
